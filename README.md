@@ -3,6 +3,11 @@
 
 Just some files.  My files!  Docker files.
 
+Clone the repo
+```shell
+docker build -t IMAGE_NAME_YOUD_LIKE -f PATH_TO_DOCKER_FILE .
+```
+
 <br>
 
 ### Who and Why?
