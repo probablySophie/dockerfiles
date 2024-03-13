@@ -36,5 +36,5 @@ docker build -t IMAGE_NAME_YOUD_LIKE -f PATH_TO_DOCKER_FILE .
 <br>
 
 **powershell_exchange_ms_graph**
-> I have to use Microsoft's system management stuff :(
+> I have to use Microsoft's system management stuff :(  
 > This one pre-installs Microsoft Graph and the Exchange Module so you don't have to
