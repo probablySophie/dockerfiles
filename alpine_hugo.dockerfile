@@ -6,3 +6,5 @@ RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/c
 # Add Git (its Git)
 RUN apk add git
 
+# Add tmux? for reasons?
+RUN apk add tmux
