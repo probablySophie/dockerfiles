@@ -1,5 +1,8 @@
 FROM alpine:latest
 
+# Add Go (programming language, needed for Hugo apparently)
+RUN apk add --no-cache git make musl-dev go
+
 # Add Hugo (Static Site Generator)
 RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
 
