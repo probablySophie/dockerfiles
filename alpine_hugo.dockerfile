@@ -12,6 +12,9 @@ RUN apk add git
 # Add tmux, I'm actually quite liking it
 RUN apk add tmux
 
+# Add Vim for a nicer editing experience
+RUN apk add vim
+
 # Config time
 RUN cd root && \
 	git init /root && \
