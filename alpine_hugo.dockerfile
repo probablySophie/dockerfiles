@@ -9,5 +9,13 @@ RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/c
 # Add Git (its Git)
 RUN apk add git
 
-# Add tmux? for reasons?
+# Add tmux, I'm actually quite liking it
 RUN apk add tmux
+
+# Config time
+RUN cd root && \
+	git init /root && \
+	git remote add origin https://github.com/probablySophie/alpine-config && \
+	git fetch && \
+	git checkout -t origin/main && \
+	cd ..
