@@ -17,5 +17,8 @@ RUN cd root && \
 	git checkout -t origin/main && \
 	cd ..
 
+ENV ENV="/root/.profile"
+
 VOLUME ["/hugo"]
 WORKDIR /hugo
+
