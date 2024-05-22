@@ -7,13 +7,7 @@ RUN apk add --no-cache git make musl-dev go
 RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
 
 # Add Git (its Git)
-RUN apk add git
-
-# Add tmux, I'm actually quite liking it
-RUN apk add tmux
-
-# Add Vim for a nicer editing experience
-RUN apk add vim
+RUN apk add git tmux vim
 
 # Config time
 RUN cd root && \
