@@ -16,3 +16,6 @@ RUN cd root && \
 	git fetch && \
 	git checkout -t origin/main && \
 	cd ..
+
+VOLUME ["/hugo"]
+WORKDIR /hugo
