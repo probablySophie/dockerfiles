@@ -7,7 +7,7 @@ RUN apk add --no-cache git make musl-dev go
 RUN apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community hugo
 
 # Add Git (its Git)
-RUN apk add git tmux vim
+RUN apk add git
 
 # Config time
 RUN cd root && \
@@ -19,6 +19,6 @@ RUN cd root && \
 
 ENV ENV="/root/.profile"
 
-VOLUME ["/hugo"]
-WORKDIR /hugo
+VOLUME ["/server"]
+WORKDIR /server
 
