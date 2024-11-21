@@ -25,7 +25,20 @@ fi
 chosen_file="${dockerfiles[$file_num]}"
 printf "You chose: $chosen_file\n\n"
 
-printf "please enter the image name to use:\n> "
+# Everything after the /
+default_name=${chosen_file##*'/'}
+# Everything before the '.dockerfile'
+default_name=${default_name%%'.dockerfile'*}
+# And swap _ for /
+default_name=${default_name/_/\/}
+
+printf "please enter the image name to use [$default_name]:\n> "
 read name
+
+if [[ "$name" == "" ]]; then
+	name=$default_name
+fi
+
+printf "Building $chosen_file with the name $name"
 
 docker build -t $name -f $chosen_file .
