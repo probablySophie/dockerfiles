@@ -41,3 +41,6 @@ docker build -t IMAGE_NAME_YOUD_LIKE -f PATH_TO_DOCKER_FILE .
 
 **ubuntu_lagrange**
 > I just wanted to fix [this thing](https://github.com/skyjake/lagrange/issues/612)
+
+**tumbleweed_dev**
+> Using OpenSUSE Tumbleweed as a Dev Container
